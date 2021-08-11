@@ -1,5 +1,12 @@
 def reverse_string(str)
-  # type your code in here
+  split_string = str.split("")
+  length = split_string.length
+  reversed_split_array = []
+  length.times do 
+    reversed_split_array << split_string[length - 1]
+    length -= 1
+  end
+  reversed_split_array.join
 end
 
 if __FILE__ == $PROGRAM_NAME
